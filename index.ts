@@ -192,6 +192,8 @@ const up_side = document.createElement('div')
 up_side.className = 'up_side'
 const h2_up_side = document.createElement('h2')
 h2_up_side.textContent = 'Get the right plan for future product.'
+const button_side = document.createElement('div')
+button_side.className = 'button_side'
 const first_btn_up_side = document.createElement('button')
 first_btn_up_side.className = 'first_btn_up_side'
 first_btn_up_side.textContent = 'Yearly'
@@ -199,10 +201,13 @@ const second_btn_up_side = document.createElement('button')
 second_btn_up_side.className = 'second_btn_up_side'
 second_btn_up_side.textContent = 'Monthly'
 
-up_side.append(h2_up_side, first_btn_up_side, second_btn_up_side)
+button_side.append(first_btn_up_side, second_btn_up_side)
+up_side.append(h2_up_side, button_side)
 
 const down_side = document.createElement('div')
+down_side.className = 'down_side'
 const left_card_in_down_side = document.createElement('div')
+left_card_in_down_side.className = 'left_card_in_down_side'
 const p_in_left_card_in_down_side = document.createElement('p')
 p_in_left_card_in_down_side.textContent = 'Starter'
 const h2_in_left_card_in_down_side = document.createElement('h2')
@@ -219,6 +224,7 @@ btn_in_left_card_in_down_side.textContent = 'Get Started'
 left_card_in_down_side.append(p_in_left_card_in_down_side, h2_in_left_card_in_down_side, p2_in_left_card_in_down_side, p3_in_left_card_in_down_side, p4_in_left_card_in_down_side, btn_in_left_card_in_down_side)
 
 const middle_card_in_down_side = document.createElement('div')
+middle_card_in_down_side.className = 'middle_card_in_down_side'
 const p_in_middle_card_in_down_side = document.createElement('p')
 p_in_middle_card_in_down_side.textContent = 'Premium'
 const h2_in_middle_card_in_down_side = document.createElement('h2')
@@ -238,6 +244,7 @@ btn_in_middle_card_in_down_side.textContent = 'Get Started'
 middle_card_in_down_side.append(p_in_middle_card_in_down_side, h2_in_middle_card_in_down_side, p2_in_middle_card_in_down_side, p3_in_middle_card_in_down_side, p4_in_middle_card_in_down_side, btn_in_middle_card_in_down_side)
 
 const right_card_in_down_side = document.createElement('div')
+right_card_in_down_side.className = 'right_card_in_down_side'
 const p_in_right_card_in_down_side = document.createElement('p')
 p_in_right_card_in_down_side.textContent = 'Enterprise'
 const h2_in_right_card_in_down_side = document.createElement('h2')

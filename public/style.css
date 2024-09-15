@@ -52,6 +52,7 @@
     font-family: 'DM Sans';
     font-weight: 700;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .nav a {
@@ -68,6 +69,7 @@
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn_in_header:hover {
@@ -110,6 +112,7 @@
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 .btn_in_first_section:hover {
@@ -143,20 +146,21 @@
         width: 100%;
     }
 
-    .left_side h1 {
-        font-size: 20px;
+    .first_section h1 {
+        font-size: 50px;
     }
 }
 
 @media (max-width: 480px) {
-    .left_side h1 {
-        font-size: 18px;
+    .first_section h1 {
+        font-size: 30px;
     }
 }
 
 /* ==================================== Section 2 ============================== */
 .second_section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-between;
     margin-bottom: 8em;
@@ -313,4 +317,246 @@
     .fourth_section a {
         font-size: 14px;
     }
+}
+
+/* ============================================= Section 5 ========================== */
+.fifth_section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fifth_section h3 {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.fifth_section p {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.left_card_in_fifth_section,
+.middle_card_in_fifth_section,
+.right_card_in_fifth_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.left_card_in_fifth_section img,
+.middle_card_in_fifth_section img,
+.right_card_in_fifth_section img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .fifth_section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ====================================== Footer =================================== */
+
+.up_side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.up_side h2 {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 60px;
+    flex: 0 1 45%;
+}
+
+.first_btn_up_side,
+.second_btn_up_side {
+    padding: 23px 60px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(25, 25, 27);
+    border: none;
+    background-color: rgb(247, 247, 251);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.first_btn_up_side:hover,
+.second_btn_up_side:hover {
+    background-color: rgb(84, 84, 212);
+    color: white;
+}
+
+.down_side {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.left_card_in_down_side,
+.middle_card_in_down_side,
+.right_card_in_down_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: rgb(248, 248, 248);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.left_card_in_down_side:hover,
+.middle_card_in_down_side:hover,
+.right_card_in_down_side:hover {
+    padding: 40px;
+    background: rgb(255, 113, 67);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.left_card_in_down_side:hover p,
+.middle_card_in_down_side:hover p,
+.right_card_in_down_side:hover p {
+    color: rgb(255, 255, 255);
+}
+
+.left_card_in_down_side:hover h2,
+.middle_card_in_down_side:hover h2,
+.right_card_in_down_side:hover h2 {
+    color: rgb(255, 255, 255);
+}
+
+.left_card_in_down_side:hover span,
+.middle_card_in_down_side:hover span,
+.right_card_in_down_side:hover span {
+    color: rgb(255, 255, 255);
+}
+
+.left_card_in_down_side:hover button,
+.middle_card_in_down_side:hover button,
+.right_card_in_down_side:hover button {
+    background-color: rgb(159, 57, 25);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(159, 57, 25);
+}
+
+.down_side p {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(105, 104, 113);
+}
+
+.down_side h2 {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 60px;
+    color: rgb(29, 41, 63);
+}
+
+.down_side span {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(29, 41, 63);
+}
+
+.down_side button {
+    padding: 20px 80px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(84, 84, 212);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(234, 233, 242);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .up_side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .up_side h2 {
+        font-family: 'DM Sans';
+        font-weight: 600;
+        font-size: 28px;
+        flex: 0 1 45%;
+    }
+
+    .first_btn_up_side,
+    .second_btn_up_side {
+        padding: 10px 35px;
+        font-family: 'DM Sans';
+        font-weight: 600;
+        font-size: 12px;
+        color: rgb(25, 25, 27);
+        border: none;
+        background-color: rgb(247, 247, 251);
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .first_btn_up_side:hover,
+    .second_btn_up_side:hover {
+        background-color: rgb(84, 84, 212);
+        color: white;
+    }
+
+    .down_side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_card_in_down_side,
+    .middle_card_in_down_side,
+    .right_card_in_down_side {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .down_side h2 {
+        font-size: 25px;
+    }
+
+    .down_side p {
+        font-size: 10px;
+    }
+
+    .down_side span {
+        font-size: 10px;
+    }
+
+    .down_side button {
+        padding: 10px 40px;
+        font-size: 10px;
+    }
+
 }
