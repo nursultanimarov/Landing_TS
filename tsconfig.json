@@ -9,6 +9,11 @@
         "skipLibCheck": true,
         "outDir": "dist",
         "moduleResolution": "node",
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules"
+            }
+        ],
         "baseUrl": "./",
         "paths": {
             "*": [
